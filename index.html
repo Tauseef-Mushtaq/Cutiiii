@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Love💕</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+      <body>
+    <!-- Floating animations -->
+    <div class="floating-hearts" id="floatingHearts"></div>
+    <div class="floating-flowers" id="floatingFlowers"></div>
+    <div class="soft-toys" id="softToys"></div>
+
+    <!-- Header -->
+    <div class="header">
+      <h1> Letters for My Cutiii 💕</h1>
+      <p>Choose the one that speaks to your soul</p>
+    </div>
+
+    <!-- Photo Section -->
+    <div class="photo-section">
+      <div class="photo-frame">
+        <img
+          id="couplePhoto"
+          src="./shagufta.jpg"
+          alt="Our beautiful memories together"
+          onerror="this.src=''; this.alt='Beautiful couple photo'; this.style.display='none';"
+        />
+      </div>
+      <div class="photo-caption">
+        <p>Shagufta - My Love 💕</p>
+      </div>
+    </div>
+
+    <!-- Envelopes -->
+    <div class="envelopes-container">
+      <div class="envelope-wrapper">
+        <div class="envelope-container" onclick="openLetter('apology')">
+          <div class="envelope apology" id="envelope-apology">
+            <div class="envelope-icon">💔</div>
+          </div>
+        </div>
+        <div class="envelope-label">My Heartfelt Apology</div>
+      </div>
+
+      <div class="envelope-wrapper">
+        <div class="envelope-container" onclick="openLetter('love')">
+          <div class="envelope love" id="envelope-love">
+            <div class="envelope-icon">💕</div>
+          </div>
+        </div>
+        <div class="envelope-label">All My Love for You</div>
+      </div>
+
+      <div class="envelope-wrapper">
+        <div class="envelope-container" onclick="openLetter('hugs-kisses')">
+          <div class="envelope hugs-kisses" id="envelope-hugs-kisses">
+            <div class="envelope-icon">🫂</div>
+          </div>
+        </div>
+        <div class="envelope-label">Hugs & Kisses</div>
+      </div>
+    </div>
+
+    <!-- Letter container -->
+    <div class="overlay" id="overlay" onclick="closeLetter()"></div>
+    <div class="letter-container" id="letterContainer">
+      <div class="letter-floating-effects" id="letterFloatingEffects"></div>
+      <div class="letter-header" id="letterHeader">
+        <h2 id="letterTitle"></h2>
+        <p id="letterSubtitle"></p>
+      </div>
+      <div class="letter-content" id="letterContent"></div>
+      <div class="letter-buttons">
+        <button
+          class="letter-btn"
+          id="actionBtn"
+          onclick="triggerSpecialEffect()"
+        ></button>
+        <button class="letter-btn love" onclick="closeLetter()">
+          💖 Close
+        </button>
+      </div>
+    </div>
+
+    <!-- Special effects -->
+    <div class="special-effect" id="specialEffect"></div>
+    <div class="love-message" id="loveMessage">I Love You 💖</div>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
